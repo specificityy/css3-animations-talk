@@ -1,0 +1,803 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<link rel="stylesheet" href="css/main.css">
+		
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<div class="corkDev">
+						<img src="css/img/corkDev.png" alt="CorkDev logo" class="corkDev pull-up">
+						<div class="clear"></div>
+					</div>
+					<h4 class="welcome-title">Welcome to CorkDev</h4>
+					<p class="welcome-subtitle">Today’s talk will be about:</p>
+					<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="390pt" height="100pt" viewBox="0 0 1135.000000 379.000000" preserveAspectRatio="xMidYMid meet">
+						<g transform="translate(0.000000,379.000000) scale(0.100000,-0.100000)" fill="#222">
+							<path stroke-width="40px" d="M1370 2554 c-183 -33 -372 -189 -470 -387 -64 -129 -83 -217 -77
+							-352 6 -161 59 -270 170 -351 81 -60 163 -84 287 -84 127 0 209 24 273 81 63
+							55 94 99 77 109 -9 5 -30 -10 -65 -45 -67 -69 -131 -90 -248 -82 -170 11 -304
+							122 -368 303 -29 83 -36 227 -15 324 34 160 141 313 268 380 79 42 191 53 263
+							26 202 -78 170 -409 -47 -467 -62 -17 -127 6 -153 55 -26 48 -17 128 19 165
+							44 46 11 50 -35 5 -50 -49 -71 -95 -71 -156 1 -57 19 -90 65 -119 43 -27 143
+							-22 206 11 189 96 285 379 174 511 -49 58 -159 90 -253 73z"/>
+							<path stroke-width="40px" d="M1989 2559 c-90 -14 -171 -71 -214 -151 -24 -43 -29 -65 -29 -118 0
+							-73 15 -109 66 -156 45 -44 71 -55 243 -109 238 -76 295 -107 335 -186 29 -56
+							27 -158 -4 -226 -72 -155 -262 -230 -443 -175 -124 38 -203 130 -203 237 0
+							136 119 227 243 186 87 -29 124 -127 72 -189 -34 -41 -68 -48 -116 -24 -47 23
+							-61 11 -28 -25 72 -76 188 -67 231 18 59 114 -47 245 -215 265 -150 18 -270
+							-79 -270 -216 0 -219 281 -365 551 -285 117 35 240 152 278 267 23 72 22 172
+							-3 228 -46 102 -130 153 -363 220 -168 49 -235 78 -274 119 -56 59 -54 158 7
+							218 49 50 89 52 226 13 155 -44 202 -47 274 -20 33 13 76 39 100 62 47 45 37
+							64 -14 27 -47 -33 -108 -35 -234 -6 -143 33 -161 35 -216 26z"/>
+							<path stroke-width="40px" d="M3013 2559 c-65 -8 -129 -45 -182 -105 -51 -58 -64 -99 -59 -183 7
+							-126 59 -168 307 -247 198 -63 242 -83 289 -128 52 -48 66 -82 66 -161 1 -124
+							-68 -225 -193 -284 -49 -23 -69 -26 -156 -26 -86 0 -107 4 -155 26 -75 35
+							-114 70 -144 131 -53 106 -18 221 82 269 55 27 126 22 176 -12 41 -28 56 -56
+							56 -107 0 -48 -21 -77 -65 -92 -28 -9 -40 -8 -69 5 -55 26 -66 14 -25 -28 65
+							-65 168 -59 217 13 32 48 27 123 -12 174 -59 78 -181 120 -283 98 -200 -42
+							-248 -265 -89 -410 161 -148 447 -145 617 6 148 132 182 343 75 468 -49 58
+							-128 95 -321 154 -258 78 -315 119 -315 224 0 60 25 107 72 136 45 27 77 25
+							204 -12 185 -54 292 -40 378 51 30 32 29 55 -2 33 -64 -46 -116 -51 -230 -22
+							-112 28 -180 36 -239 29z"/>
+							<path stroke-width="40px" d="M3886 2215 c-81 -31 -135 -89 -157 -170 -23 -82 26 -155 103 -155 62
+							0 105 32 127 93 13 35 0 34 -37 -3 -39 -39 -75 -39 -113 -1 -39 39 -40 96 -3
+							141 37 43 75 60 136 60 122 0 199 -97 168 -211 -15 -55 -95 -139 -132 -139
+							-37 0 -89 -21 -85 -34 4 -11 30 -11 103 0 37 5 45 2 79 -27 46 -41 65 -83 65
+							-146 -1 -181 -223 -282 -347 -158 -42 42 -45 93 -8 130 28 29 88 34 119 10 48
+							-36 49 4 3 50 -85 85 -217 29 -217 -90 0 -122 144 -215 288 -186 79 16 138 49
+							192 107 106 116 86 255 -45 319 l-55 27 44 42 c111 103 115 244 8 320 -36 25
+							-52 30 -119 33 -52 2 -91 -2 -117 -12z"/>
+							<path stroke-width="40px" stroke-miterlimit="10" d="M5445 2573 c-252 -37 -516 -304 -616 -623 -20 -64 -24 -96 -24 -215
+							0 -156 11 -196 75 -269 49 -55 99 -77 177 -77 89 0 154 32 231 117 l59 64 6
+							-66 c6 -80 29 -110 91 -119 87 -13 178 56 266 203 l40 67 0 -143 0 -142 40 26
+							40 27 0 76 c0 69 3 82 31 127 65 103 129 144 143 92 3 -13 6 -83 6 -156 0 -73
+							5 -142 10 -153 13 -23 77 -26 118 -5 49 26 138 129 181 211 l21 40 0 -110 c0
+							-134 10 -155 71 -155 71 0 173 93 237 215 l21 40 1 -137 c0 -76 2 -138 5 -138
+							3 0 24 9 45 20 l40 20 0 73 c0 66 4 79 35 133 43 71 78 104 111 104 l24 0 0
+							-175 c0 -96 2 -175 5 -175 3 0 24 9 45 20 l40 20 0 73 c0 65 4 78 36 132 46
+							77 82 115 110 115 21 0 22 -3 25 -155 3 -129 7 -157 21 -171 20 -21 76 -21
+							115 0 32 16 98 84 134 136 l24 35 12 -58 c8 -32 20 -69 29 -82 19 -30 72 -55
+							115 -55 44 0 115 36 142 72 l21 29 11 -38 c19 -67 86 -75 160 -19 36 28 108
+							123 144 190 l20 40 3 -142 3 -141 42 27 43 27 0 82 c0 80 1 83 43 145 46 67
+							83 95 110 85 15 -6 17 -25 17 -146 0 -151 8 -187 42 -200 68 -25 161 49 263
+							208 l60 93 5 -136 c4 -108 8 -139 22 -152 23 -24 90 -20 140 8 46 25 127 118
+							162 187 l23 45 5 -113 c5 -127 13 -143 72 -143 59 0 101 33 208 165 l23 28 1
+							-56 c1 -99 62 -150 171 -142 206 15 337 284 190 391 -23 17 -43 21 -100 21
+							-117 -1 -173 -39 -299 -202 -43 -56 -91 -111 -105 -123 -31 -24 -59 -26 -67
+							-4 -3 9 -6 89 -6 179 l0 164 -45 -26 c-25 -13 -45 -30 -45 -37 0 -7 -18 -49
+							-40 -94 -51 -107 -143 -205 -186 -200 l-29 3 -3 184 -2 183 81 128 c75 120 86
+							150 56 150 -7 0 -40 -44 -74 -98 l-62 -97 -1 158 c0 86 -4 157 -8 157 -4 0
+							-25 -17 -45 -38 l-37 -38 0 -177 c0 -172 -1 -179 -26 -230 -75 -148 -192 -293
+							-230 -285 -17 3 -20 17 -25 148 -3 83 -10 154 -17 167 -38 69 -146 22 -226
+							-97 -15 -24 -16 -22 -16 58 l0 82 -44 -22 c-37 -18 -46 -28 -56 -65 -29 -100
+							-161 -273 -210 -273 -19 0 -20 7 -20 180 l0 180 -38 -19 c-37 -19 -41 -19 -84
+							-3 -38 13 -52 14 -86 4 -70 -21 -155 -94 -241 -205 -79 -103 -116 -137 -145
+							-137 -21 0 -25 25 -28 178 -3 127 -4 135 -27 153 -49 40 -115 12 -180 -78
+							l-46 -64 -6 53 c-10 93 -38 120 -103 98 -32 -10 -101 -75 -138 -130 -17 -24
+							-17 -23 -17 62 l-1 88 -44 -22 c-36 -17 -46 -28 -56 -62 -35 -116 -158 -281
+							-204 -274 -20 3 -21 10 -24 176 -1 99 -6 172 -12 172 -5 0 -25 -7 -44 -16 -28
+							-14 -38 -27 -54 -75 -37 -109 -154 -259 -202 -259 -11 0 -21 1 -21 3 -1 1 -4
+							70 -8 153 -5 130 -9 155 -25 173 -42 46 -119 17 -183 -69 -20 -27 -41 -50 -45
+							-50 -4 0 -8 32 -8 70 0 39 -2 70 -5 70 -2 0 -20 -8 -39 -17 -27 -13 -39 -27
+							-51 -62 -25 -74 -91 -176 -146 -225 -45 -40 -58 -47 -88 -44 l-36 3 -3 221 -2
+							221 24 11 c54 24 156 134 191 206 127 256 7 495 -230 459z m73 -89 c47 -19 88
+							-59 114 -108 28 -55 28 -170 -2 -248 -23 -61 -88 -142 -139 -171 l-31 -18 0
+							185 c0 102 -2 186 -5 186 -3 0 -27 -12 -55 -27 l-50 -28 0 -177 c0 -178 0
+							-178 -22 -178 -13 0 -42 9 -66 20 -59 27 -87 87 -80 175 6 73 25 112 85 176
+							25 27 40 50 34 53 -17 11 -66 -21 -114 -74 -80 -89 -108 -209 -68 -295 34 -75
+							85 -105 177 -105 l54 0 0 -99 0 -99 -41 -61 c-71 -106 -176 -155 -259 -121
+							-47 20 -98 86 -122 160 -29 90 -28 271 2 385 56 214 195 394 357 461 70 28
+							174 32 231 8z m2262 -739 l30 -16 0 -95 0 -96 -39 -39 c-30 -30 -46 -39 -73
+							-39 -90 0 -137 114 -87 216 35 74 105 102 169 69z m1936 -10 c79 -51 84 -187
+							9 -262 -30 -30 -39 -33 -90 -33 -51 0 -60 3 -91 34 -33 33 -34 37 -34 109 0
+							60 4 80 23 108 43 65 122 84 183 44z"/>
+
+							<path stroke-width="40px" d="M10620 1743 c-96 -183 -182 -293 -230 -293 -25 0 -30 27 -30 171 0
+							113 -2 129 -21 153 -41 53 -119 26 -186 -64 l-38 -51 -3 70 c-2 39 -7 71 -12
+							71 -5 0 -25 -7 -44 -16 -28 -14 -38 -28 -55 -74 -49 -133 -170 -271 -265 -303
+							-52 -17 -63 -42 -15 -32 101 21 190 95 262 216 l37 64 0 -143 0 -143 45 31 45
+							31 0 82 c0 72 3 87 26 122 64 97 124 133 138 83 3 -13 6 -83 6 -156 0 -73 5
+							-142 10 -153 13 -24 77 -26 119 -4 44 22 123 115 193 224 34 55 66 101 70 101
+							18 0 93 -78 109 -115 22 -48 24 -85 5 -130 -19 -45 -56 -69 -96 -60 -36 8 -70
+							55 -70 98 0 36 -9 34 -50 -8 l-34 -35 30 -31 c41 -43 79 -61 131 -61 50 0 81
+							17 116 64 74 100 59 218 -43 319 -31 32 -60 65 -63 74 -4 8 -11 15 -16 15 -5
+							0 -37 -53 -71 -117z"/>
+						</g>
+					</svg>
+
+					<div class="author">
+						<small>by <a href="https://github.com/wilsonjs">Wilson Jimenez</a></small>
+						<div class="cloak"></div>
+					</div>
+				</section>
+
+				<section>
+					<h2>Animations in the past</h2>
+					<ul>
+						<li>Adobe Flash</li>
+						<li>Synchronized Multimedia Integration Language (SMIL)</li>
+						<li>JavaScript</li>
+						<li>Pseudo-class <pre class="inline"><code>:hover</code></pre></li>
+						<li>Webkit announces inclusion of CSS Animations in 2007</li>
+					</ul>
+
+					<aside class="notes">
+						 SMIL lets you send media objects to the client and then coordinate them, not supported on IE, 	will be deprecated in favour of Web Animations API. <br><br>
+						 Pseudo-class :hover has been used to generate rudimentary animations for years.
+					</aside>
+				</section>
+
+				<section>
+					<section>
+						<h2>Two animation types on CSS3</h2>
+						<ul>
+							<li>Animations</li>
+							<li>Transitions
+								<ul>
+									<li>transition-property</li>
+									<li>transition-delay</li>
+									<li>transition-timing-function</li>
+								</ul>
+							</li>
+						</ul>
+
+					<aside class="notes">
+						 Transitions: animations that happen due to a change of state.
+						 <p>For making them:</p>
+						 <ul>
+						 	<li>Define animation prop</li>
+						 	<li>How long will take</li>
+						 	<li>Set beginning and ending values</li>
+						 </ul>
+					</aside>
+					</section>
+				</section>
+
+				<section>
+					<small><a href="http://leaverou.github.io/animatable/">Transition props list</a> by <a href="http://lea.verou.me/about/">Lea Verou</a></small>
+					<img src="css/img/animatable.jpg" alt="animatable" class="pull-up">
+					<aside class="notes">
+						<p>Many props can be transitioned.</p>
+					</aside>
+				</section>
+
+				<section>
+					<a href="#/4" class="push-button">
+						Push Me
+					</a><br><br>
+
+<pre><code contenteditable>.push-button{
+  top: 0;
+  background-color: #cb3b27;
+  box-shadow: 0px 9px 0px #84261a;
+
+  transition-property: top, background-color, box-shadow;
+  transition-duration: 0.3s;
+}
+
+.push-button:hover {
+  background-color: #D94833;
+  box-shadow: 0px 9px 0px #8E2B1C;
+}
+
+.push-button:active {
+  box-shadow: 0px 2px 0px #84261a;
+  top: 7px;
+}
+</code></pre>
+
+					<aside class="notes">
+						<ul>
+							<li>This is the css that matters for this transition</li>
+							<li>Explain transition property all</li>
+							<li>Explain shorthand transition</li>
+							<li>Be aware tht animations are not fully supported by all browsers, so you need to use vendor prefixes</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Transition Delay</h2>
+
+						<div id="delay_demo" class="shadow hover">
+						  <div id="dd_main"></div>
+						  <div id="dd1"></div>
+						  <div id="dd2"></div>
+						  <div id="dd3"></div>
+						  <div id="dd4"></div>
+						  <div id="dd5"></div>
+						  <div id="dd6"></div>
+						  <div id="dd7"></div>
+						  <div id="dd8"></div>
+						  <pre><small>by <a href="http://css3.bradshawenterprises.com/transitions/">Rich Bradshaw</a></small></pre>
+						</div>
+				</section>
+
+				<section>
+					<h2>Timing Functions</h2>
+					<ul>
+						<li>ease (default one)</li>
+						<li>ease-in-out</li>
+						<li>ease-in</li>
+						<li>ease-out</li>
+						<li>linear</li>
+						<li>cubic-bezier</li>
+					</ul>
+				</section>
+
+				<section>
+					<section>
+						<h2>Timing Functions Demo</h2>
+						<div id="timings_demo">
+						  <div id="ease" class="test_box"><p>Ease</p></div>
+						  <div id="ease-in-out" class="test_box"><p>Ease<br>In Out</p></div>
+						  <div id="linear" class="test_box"><p>Linear</p></div>
+						  <div id="ease-in" class="test_box"><p>Ease<br>In</p></div>
+						  <div id="ease-out" class="test_box"><p>Ease<br>Out</p></div>
+						  <div id="negative" class="test_box"><p>Cubic<br>Bezier</p></div>
+						</div>
+					</section>
+					<section>
+						<h4>Ease-In vs Ease-Out</h4>
+						<div id="timings_demo">
+						  <div id="ease-in" class="test_box"><p>Ease<br>In</p></div>
+						  <div id="ease-out" class="test_box"><p>Ease<br>Out</p></div>
+						</div>
+					</section>
+					<section>
+						<h4>Ease vs Linear</h4>
+						<div id="timings_demo">
+						  <div id="ease" class="test_box"><p>Ease</p></div>
+						  <div id="linear" class="test_box"><p>Linear</p></div>
+						</div>
+						<aside class="notes">
+							Ease is better for objects already in the viewPort.
+						</aside>
+					</section>
+					<section>
+						<h4>Entering stage</h4>
+						<div id="timings_demo" class="linear-demo">
+						  <div id="linear" class="test_box"><p>Linear</p></div>
+						  <div id="ease" class="test_box"><p>Ease</p></div>
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<small><a href="http://easings.net/">Easings Cheat Sheet</a> by <a href="https://github.com/ai">Andrey Sitnik</a></small>
+					<img src="css/img/easings-cheat-sheet.jpg" alt="easings cheat sheet" class="pull-up">
+				</section>
+
+				<section>
+					<small><a href="http://cubic-bezier.com/">Cubic Bezier</a> by <a href="http://lea.verou.me/about/">Lea Verou</a></small>
+					<img src="css/img/cubic-bezier.jpg" alt="cubic bezier tool" class="pull-up">
+				</section>
+
+				<section>
+					<small><a href="http://matthewlein.com/ceaser/">Ceaser CSS Easing Animation Tool</a> by <a href="https://twitter.com/matthewlein">Matthew Lein</a></small>
+					<img src="css/img/ceaser.jpg" alt="ceaser cubic bezier tool" class="pull-up">
+				</section>
+
+				<section>
+					<h3>Transition Events</h3>
+					<pre>
+						<code>
+var element = document.getElementById("element");
+
+element.addEventListener("transitionend", function(ev) {
+    console.log("Transition has finished", ev.propertyName, ev.elapsedTime);
+});
+						</code>
+					</pre>
+					<aside class="notes">
+						Handy so you don't have to deal with settung timeouts to find out when an animation has finished.
+					</aside>
+				</section>
+
+				<section>
+					<section>
+						<h2>CSS3 Animations</h2>
+						<ul>
+							<li>Define intermediate points by using Keyframes</li>
+							<li>Looping</li>
+							<li>Play backwards</li>
+							<li>Pause and resume</li>
+						</ul>
+					</section>
+					<section>
+						<p>Transitions</p>
+						<img src="css/img/transitions_start_end.png" alt="transitions" class="pull-up"><br>
+						<p>Animations</p>
+						<img src="css/img/animations_start_end.png" alt="animations" class="pull-up">
+					</section>
+				</section>
+
+
+				<section>
+					<div class="cloud-container">
+						<img class="cloud" src="css/img/cloud.png" alt="">
+						<img class="cloud" src="css/img/cloud.png" alt="">
+					</div>
+					<pre>
+						<code>.cloud {
+  animation-name: cloudsPassingBy;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-fill-mode: backwards;
+}
+.cloud:first-child {
+  -webkit-animation-direction: alternate;
+  -webkit-animation-delay: 2s;
+}
+.cloud:nth-child(2) {
+  -webkit-animation-direction: alternate-reverse;
+}
+@keyframes cloudsPassingBy {
+  from {
+    margin-left: -150px;
+  }
+  to {
+    margin-left: 450px;
+  }
+}</code>
+					</pre>
+				</section>
+
+				
+				<section>
+					<h4>CSS Transforms</h4>
+					<ul>
+						<li>translate</li>
+						<li>rotate</li>
+						<li>scale</li>
+						<li>skew</li>
+						<li>matrix</li>
+					</ul>
+
+					<aside class="notes">
+						<p>Transforms are better to animate than other properties.</p>
+						<p>Cause affect the element as a whole without affecting the rest.</p>
+						<p>Browser doesn't have to calculate new shape elements around or childs.</p>
+						<p>--Go back to CLOUD demo and do TranlateX--</p>
+					</aside>
+				</section>
+
+				<section>
+					<h5>CSS Transforms Demo</h5>
+					<div id="transDemo1">
+					  <div id="skew">Skew</div>
+					  <div id="scale">Scale</div>
+					  <div id="rotate">Rotate</div>
+					  <div id="translate">Translate</div>
+					  <div class="clear"></div>
+					</div>
+				</section>
+
+				<section>
+					<section>
+						<h3>Rotate</h3>
+							<div id="transDemo4">
+						  	<div id="rotateX">X</div>
+						  	<div id="rotateY">Y</div>
+						  	<div id="rotateZ">Z</div>
+						  	<div class="clear"></div>
+							</div>
+							<aside class="notes">
+								<ul>
+									<li>3 rotation types can be applied: X, Y, Z.</li>
+									<li>-- Change transform-origin: top to X.</li>
+									<li>It gets more interesting when applying perspective.</li>
+								</ul>
+								<p></p>
+							</aside>
+					</section>
+					<section>
+						<p><small>-webkit-perspective</small></p>
+						<img src="css/img/perspective-distance.png" alt="" class="pull-up">
+						<aside class="notes">
+							<ul>
+								<li>Perspective allows you to 3D position elements.</li>
+								<li>Imaginary lens through which we see the screen. Like focal-length in photography.</li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<div class="portfolio">
+	
+							<div class="portfolio-item graphic-design">
+								<img class="portfolio-bg" src="css/img/cake.png" alt="cake">
+								<div class="portfolio-description">
+									<p>Cake Design</p>
+									<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
+								</div>
+							</div>
+							
+							<div class="portfolio-item web-design">
+								<img class="portfolio-bg" src="css/img/submarine.png" alt="submarine">
+								<div class="portfolio-description">
+									<p>Submarine Design</p>
+									<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
+								</div>
+							</div>
+							
+							<div class="portfolio-item video">
+								<img class="portfolio-bg" src="css/img/circus.png" alt="circus">
+								<div class="portfolio-description">
+									<p>Circus Design</p>
+									<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
+								</div>
+							</div>
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<img src="css/img/basketball.png" alt="basketball" class="pulse basketball">
+					<pre>
+						<code>.pulse {
+  animation-name: pulse;
+  animation-duration: 1.5s;   
+  animation-iteration-count: infinite;
+} 
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }   
+  100% {
+    transform: scale(0.95);
+    opacity: 0.7;
+  }           
+}</code>
+					</pre>
+					<aside class="notes">
+						0% keyFrame is better for browser compatibility issues.
+					</aside>
+				</section>
+
+
+				<section>
+					<section>
+						<h3>Sprite Animations</h3>
+						<div class="ken"></div>
+
+						<pre>
+							<code>.ken {
+  height: 110px;
+  width: 70px;
+  background-image: url("css/img/ken-shoryuken.png");
+  animation: shoryuken steps(15, end) normal 2.5s infinite;
+}
+
+@keyframes shoryuken {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -1054px 0;
+  }
+}
+							</code>
+						</pre>
+						<aside class="notes">
+							The second parameter of step() defines the point at which the action declared in @keyframes will start.
+							<ul>
+								<li>End: is default, starts at 1st part of the img.</li>
+								<li>Start: animation starts at 2nd part of img.</li>
+								<li>This is how you see sprites most of the time.</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+					<div>
+						
+						<p contenteditable class="typing-animation">Typing sprite animation.<span>&nbsp;</span></p>
+						<div class="clear"></div>
+					</div>
+
+						<pre>
+							<code>.typing-animation span {
+  width: 0;
+  background: #222;
+  border-left: .1em solid #222;
+  animation: typing 8s steps(24, end), blink-caret 1s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 100% }
+  to { width:0 }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #fff }
+}		
+							</code>
+						</pre>
+
+						<aside class="notes">
+							But you can also simulate keyboard typing like this.
+						</aside>
+					</section>
+				</section>
+
+
+				<section>
+					<h3>Animation Events</h3>
+					<ul>
+						<li>animationstart</li>
+						<li>animationiteration</li>
+						<li>animationend</li>
+					</ul>
+					<pre>
+						<code>
+var anim = document.getElementById("anim");
+
+anim.addEventListener("animationstart", AnimationListener);
+						</code>
+					</pre>
+					<aside class="notes">
+						Again, more options on what you can do while the animation is running. <br><br>
+						No need to set timeouts to do stuff depending on the state of the animation.
+					</aside>
+				</section>
+
+
+				<section>
+					<section>
+						<h2>SVG Path Drawing</h2>
+
+							<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="390pt" height="100pt" viewBox="0 0 1135.000000 379.000000" preserveAspectRatio="xMidYMid meet">
+							<g transform="translate(0.000000,379.000000) scale(0.100000,-0.100000)" fill="#222">
+								<path stroke-width="40px" d="M1370 2554 c-183 -33 -372 -189 -470 -387 -64 -129 -83 -217 -77
+								-352 6 -161 59 -270 170 -351 81 -60 163 -84 287 -84 127 0 209 24 273 81 63
+								55 94 99 77 109 -9 5 -30 -10 -65 -45 -67 -69 -131 -90 -248 -82 -170 11 -304
+								122 -368 303 -29 83 -36 227 -15 324 34 160 141 313 268 380 79 42 191 53 263
+								26 202 -78 170 -409 -47 -467 -62 -17 -127 6 -153 55 -26 48 -17 128 19 165
+								44 46 11 50 -35 5 -50 -49 -71 -95 -71 -156 1 -57 19 -90 65 -119 43 -27 143
+								-22 206 11 189 96 285 379 174 511 -49 58 -159 90 -253 73z"/>
+								<path stroke-width="40px" d="M1989 2559 c-90 -14 -171 -71 -214 -151 -24 -43 -29 -65 -29 -118 0
+								-73 15 -109 66 -156 45 -44 71 -55 243 -109 238 -76 295 -107 335 -186 29 -56
+								27 -158 -4 -226 -72 -155 -262 -230 -443 -175 -124 38 -203 130 -203 237 0
+								136 119 227 243 186 87 -29 124 -127 72 -189 -34 -41 -68 -48 -116 -24 -47 23
+								-61 11 -28 -25 72 -76 188 -67 231 18 59 114 -47 245 -215 265 -150 18 -270
+								-79 -270 -216 0 -219 281 -365 551 -285 117 35 240 152 278 267 23 72 22 172
+								-3 228 -46 102 -130 153 -363 220 -168 49 -235 78 -274 119 -56 59 -54 158 7
+								218 49 50 89 52 226 13 155 -44 202 -47 274 -20 33 13 76 39 100 62 47 45 37
+								64 -14 27 -47 -33 -108 -35 -234 -6 -143 33 -161 35 -216 26z"/>
+								<path stroke-width="40px" d="M3013 2559 c-65 -8 -129 -45 -182 -105 -51 -58 -64 -99 -59 -183 7
+								-126 59 -168 307 -247 198 -63 242 -83 289 -128 52 -48 66 -82 66 -161 1 -124
+								-68 -225 -193 -284 -49 -23 -69 -26 -156 -26 -86 0 -107 4 -155 26 -75 35
+								-114 70 -144 131 -53 106 -18 221 82 269 55 27 126 22 176 -12 41 -28 56 -56
+								56 -107 0 -48 -21 -77 -65 -92 -28 -9 -40 -8 -69 5 -55 26 -66 14 -25 -28 65
+								-65 168 -59 217 13 32 48 27 123 -12 174 -59 78 -181 120 -283 98 -200 -42
+								-248 -265 -89 -410 161 -148 447 -145 617 6 148 132 182 343 75 468 -49 58
+								-128 95 -321 154 -258 78 -315 119 -315 224 0 60 25 107 72 136 45 27 77 25
+								204 -12 185 -54 292 -40 378 51 30 32 29 55 -2 33 -64 -46 -116 -51 -230 -22
+								-112 28 -180 36 -239 29z"/>
+								<path stroke-width="40px" d="M3886 2215 c-81 -31 -135 -89 -157 -170 -23 -82 26 -155 103 -155 62
+								0 105 32 127 93 13 35 0 34 -37 -3 -39 -39 -75 -39 -113 -1 -39 39 -40 96 -3
+								141 37 43 75 60 136 60 122 0 199 -97 168 -211 -15 -55 -95 -139 -132 -139
+								-37 0 -89 -21 -85 -34 4 -11 30 -11 103 0 37 5 45 2 79 -27 46 -41 65 -83 65
+								-146 -1 -181 -223 -282 -347 -158 -42 42 -45 93 -8 130 28 29 88 34 119 10 48
+								-36 49 4 3 50 -85 85 -217 29 -217 -90 0 -122 144 -215 288 -186 79 16 138 49
+								192 107 106 116 86 255 -45 319 l-55 27 44 42 c111 103 115 244 8 320 -36 25
+								-52 30 -119 33 -52 2 -91 -2 -117 -12z"/>
+								<path stroke-width="40px" stroke-miterlimit="10" d="M5445 2573 c-252 -37 -516 -304 -616 -623 -20 -64 -24 -96 -24 -215
+								0 -156 11 -196 75 -269 49 -55 99 -77 177 -77 89 0 154 32 231 117 l59 64 6
+								-66 c6 -80 29 -110 91 -119 87 -13 178 56 266 203 l40 67 0 -143 0 -142 40 26
+								40 27 0 76 c0 69 3 82 31 127 65 103 129 144 143 92 3 -13 6 -83 6 -156 0 -73
+								5 -142 10 -153 13 -23 77 -26 118 -5 49 26 138 129 181 211 l21 40 0 -110 c0
+								-134 10 -155 71 -155 71 0 173 93 237 215 l21 40 1 -137 c0 -76 2 -138 5 -138
+								3 0 24 9 45 20 l40 20 0 73 c0 66 4 79 35 133 43 71 78 104 111 104 l24 0 0
+								-175 c0 -96 2 -175 5 -175 3 0 24 9 45 20 l40 20 0 73 c0 65 4 78 36 132 46
+								77 82 115 110 115 21 0 22 -3 25 -155 3 -129 7 -157 21 -171 20 -21 76 -21
+								115 0 32 16 98 84 134 136 l24 35 12 -58 c8 -32 20 -69 29 -82 19 -30 72 -55
+								115 -55 44 0 115 36 142 72 l21 29 11 -38 c19 -67 86 -75 160 -19 36 28 108
+								123 144 190 l20 40 3 -142 3 -141 42 27 43 27 0 82 c0 80 1 83 43 145 46 67
+								83 95 110 85 15 -6 17 -25 17 -146 0 -151 8 -187 42 -200 68 -25 161 49 263
+								208 l60 93 5 -136 c4 -108 8 -139 22 -152 23 -24 90 -20 140 8 46 25 127 118
+								162 187 l23 45 5 -113 c5 -127 13 -143 72 -143 59 0 101 33 208 165 l23 28 1
+								-56 c1 -99 62 -150 171 -142 206 15 337 284 190 391 -23 17 -43 21 -100 21
+								-117 -1 -173 -39 -299 -202 -43 -56 -91 -111 -105 -123 -31 -24 -59 -26 -67
+								-4 -3 9 -6 89 -6 179 l0 164 -45 -26 c-25 -13 -45 -30 -45 -37 0 -7 -18 -49
+								-40 -94 -51 -107 -143 -205 -186 -200 l-29 3 -3 184 -2 183 81 128 c75 120 86
+								150 56 150 -7 0 -40 -44 -74 -98 l-62 -97 -1 158 c0 86 -4 157 -8 157 -4 0
+								-25 -17 -45 -38 l-37 -38 0 -177 c0 -172 -1 -179 -26 -230 -75 -148 -192 -293
+								-230 -285 -17 3 -20 17 -25 148 -3 83 -10 154 -17 167 -38 69 -146 22 -226
+								-97 -15 -24 -16 -22 -16 58 l0 82 -44 -22 c-37 -18 -46 -28 -56 -65 -29 -100
+								-161 -273 -210 -273 -19 0 -20 7 -20 180 l0 180 -38 -19 c-37 -19 -41 -19 -84
+								-3 -38 13 -52 14 -86 4 -70 -21 -155 -94 -241 -205 -79 -103 -116 -137 -145
+								-137 -21 0 -25 25 -28 178 -3 127 -4 135 -27 153 -49 40 -115 12 -180 -78
+								l-46 -64 -6 53 c-10 93 -38 120 -103 98 -32 -10 -101 -75 -138 -130 -17 -24
+								-17 -23 -17 62 l-1 88 -44 -22 c-36 -17 -46 -28 -56 -62 -35 -116 -158 -281
+								-204 -274 -20 3 -21 10 -24 176 -1 99 -6 172 -12 172 -5 0 -25 -7 -44 -16 -28
+								-14 -38 -27 -54 -75 -37 -109 -154 -259 -202 -259 -11 0 -21 1 -21 3 -1 1 -4
+								70 -8 153 -5 130 -9 155 -25 173 -42 46 -119 17 -183 -69 -20 -27 -41 -50 -45
+								-50 -4 0 -8 32 -8 70 0 39 -2 70 -5 70 -2 0 -20 -8 -39 -17 -27 -13 -39 -27
+								-51 -62 -25 -74 -91 -176 -146 -225 -45 -40 -58 -47 -88 -44 l-36 3 -3 221 -2
+								221 24 11 c54 24 156 134 191 206 127 256 7 495 -230 459z m73 -89 c47 -19 88
+								-59 114 -108 28 -55 28 -170 -2 -248 -23 -61 -88 -142 -139 -171 l-31 -18 0
+								185 c0 102 -2 186 -5 186 -3 0 -27 -12 -55 -27 l-50 -28 0 -177 c0 -178 0
+								-178 -22 -178 -13 0 -42 9 -66 20 -59 27 -87 87 -80 175 6 73 25 112 85 176
+								25 27 40 50 34 53 -17 11 -66 -21 -114 -74 -80 -89 -108 -209 -68 -295 34 -75
+								85 -105 177 -105 l54 0 0 -99 0 -99 -41 -61 c-71 -106 -176 -155 -259 -121
+								-47 20 -98 86 -122 160 -29 90 -28 271 2 385 56 214 195 394 357 461 70 28
+								174 32 231 8z m2262 -739 l30 -16 0 -95 0 -96 -39 -39 c-30 -30 -46 -39 -73
+								-39 -90 0 -137 114 -87 216 35 74 105 102 169 69z m1936 -10 c79 -51 84 -187
+								9 -262 -30 -30 -39 -33 -90 -33 -51 0 -60 3 -91 34 -33 33 -34 37 -34 109 0
+								60 4 80 23 108 43 65 122 84 183 44z"/>
+
+								<path stroke-width="40px" d="M10620 1743 c-96 -183 -182 -293 -230 -293 -25 0 -30 27 -30 171 0
+								113 -2 129 -21 153 -41 53 -119 26 -186 -64 l-38 -51 -3 70 c-2 39 -7 71 -12
+								71 -5 0 -25 -7 -44 -16 -28 -14 -38 -28 -55 -74 -49 -133 -170 -271 -265 -303
+								-52 -17 -63 -42 -15 -32 101 21 190 95 262 216 l37 64 0 -143 0 -143 45 31 45
+								31 0 82 c0 72 3 87 26 122 64 97 124 133 138 83 3 -13 6 -83 6 -156 0 -73 5
+								-142 10 -153 13 -24 77 -26 119 -4 44 22 123 115 193 224 34 55 66 101 70 101
+								18 0 93 -78 109 -115 22 -48 24 -85 5 -130 -19 -45 -56 -69 -96 -60 -36 8 -70
+								55 -70 98 0 36 -9 34 -50 -8 l-34 -35 30 -31 c41 -43 79 -61 131 -61 50 0 81
+								17 116 64 74 100 59 218 -43 319 -31 32 -60 65 -63 74 -4 8 -11 15 -16 15 -5
+								0 -37 -53 -71 -117z"/>
+							</g>
+						</svg>
+
+						<img src="css/img/path-stroke.jpg" alt="">
+
+						<aside class="notes">
+							<ul>
+								<li>Dasharray: lets you specify the length of the rendered part of the line, then the length of the gap.</li>
+								<li>Dashoffset: lets you change where the dasharray starts.</li>
+								<li></li>
+								<li></li>
+							</ul>
+						</aside>
+
+
+					</section>
+
+					<section>
+						<pre>
+<code contenteditable>var path = document.querySelector('.talk path');
+var length = path.getTotalLength();
+
+// Clear any previous transition
+path.style.transition = 'none';
+
+// Set up the starting positions
+path.style.strokeDasharray = length + ' ' + length;
+path.style.strokeDashoffset = length;
+
+// Trigger a layout so styles are calculated & the browser
+// picks up the starting position before animating
+path.getBoundingClientRect();
+
+// Define our transition
+path.style.transition =	'stroke-dashoffset 2s ease-in-out';
+
+// Draw!
+path.style.strokeDashoffset = '0';</code>
+</pre>
+					</section>
+				
+				</section>
+
+
+				<section>
+					<h2>Strengths</h2>
+					<ul>
+						<li>Render faster than JS equivalent</li>
+						<li>Benefit from hardware acceleration (processed by the GPU)</li>
+						<li>Battery efficient</li>
+						<li>Easy to work with.. it’s just CSS</li>
+						<li>Use of RequestAnimationFrame</li>
+					</ul>
+
+					<aside class="notes">
+						<p>Bulk of the work is handled by the browser internally.</p>
+						<p>RAF: way of browser keeping track of what's updated, and re-painting stuff when it needs to.</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Tools</h2>
+					<ul>
+						<li><a href="http://mynameismatthieu.com/WOW/index.html">Reveal animations</a></li>
+						<li><a href="http://daneden.github.io/animate.css/">Animate.css</a></li>
+						<li><a href="https://github.com/peachananr/onepage-scroll">One page scroll</a></li>
+						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
+					</ul>
+
+					<aside class="notes">
+						We've seen a few ones through out the talk already.
+					</aside>
+				</section>
+
+				<section style="text-align: left;">
+					<h1>THE END</h1>
+					<p>
+						- Thanks!
+					</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script src="lib/js/jquery-1.11.2.min.js"></script>
+		<script src="lib/js/walkway.js"></script>
+		<script src="js/main.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'concave', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
