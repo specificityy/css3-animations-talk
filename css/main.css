@@ -1,0 +1,586 @@
+.half {
+  width: 50%;
+  float: left;
+  position: relative;
+}
+pre.inline, pre.inline code {
+	display: inline;
+}
+section img.pull-up {
+	margin-top: -20px !important;
+}
+
+/* entrance ----------------------------------------- */
+.corkDev div {
+  width: 160px;
+  height: 160px;
+}
+
+.corkDev img {
+  position: absolute;
+  border: 7px solid #ecf0f1 !important;
+  width: 160px;
+  height: 160px;
+  left: 385px;
+  border-radius: 90px;
+  box-shadow: 0 5px 15px 0 #555;
+  -webkit-animation: rollDown 2s ease-out 1 backwards;
+}
+
+.welcome-title {
+ -webkit-animation: fadeInRight 1s ease 1 backwards 1.5s;
+}
+
+.welcome-subtitle {
+ -webkit-animation: fadeInLeft 1s ease 1 backwards 1.5s;
+}
+
+.author {
+  position: relative;
+}
+
+ .author div.cloak {
+  position: absolute;
+  background-color: #222;
+  height: 100%;
+  width: 50%;
+  top: 0;
+  left: 30%;
+  -webkit-animation: slideRight 15s ease 1 both 5s;
+}
+
+@-webkit-keyframes rollDown {
+  from {
+    -webkit-transform: translateY(-300px) rotate(160deg);
+  }
+  to {
+    -webkit-transform: rotate(0) translateY(0);
+  }
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-70px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(70px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideRight {
+  from {
+    -webkit-transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(1500px);
+  }
+}
+
+
+/* transition demo --------------------------------------------------------------------------- */
+
+/*.demo-transition .transition {
+  margin: 0 auto;
+  width: 550px;
+  padding: 10px;
+  border-radius: 15px;
+  border: 7px solid #222;
+  transition-property: all;
+  transition-duration: 0.6s;
+  transition-delay: 0.4s;
+  transition-timing-function: ease;
+}
+
+.demo-transition .transition:hover {
+  background-color: #2c3e50;
+  border-color: #ddd;
+}
+
+.demo-transition .transition .world {
+  position: absolute;
+  left: 380px;
+  transition-property: color, left;
+  transition-duration: 0.6s;
+}
+
+.demo-transition:hover .transition .world {
+  left: 475px;
+  color: #e74c3c;
+}
+
+.demo-transition .transition .hello {
+  transition-property: opacity;
+  transition-duration: 0.4s;
+  margin-left: -100px;
+  opacity: 0;
+}
+
+.demo-transition:hover .transition .hello {
+  opacity: 1;
+}*/
+
+
+.push-button {
+  top: 0;
+  width: 200px;
+  color: #fff !important;
+  background-color: #cb3b27;
+  padding: 10px 20px !important;
+  margin-bottom: 50px !important;
+  -webkit-border-radius: 5px !important;
+  -webkit-box-shadow: 0px 9px 0px #84261a !important;
+
+  -webkit-transition-property: top, background-color, -webkit-box-shadow !important;
+  -webkit-transition-duration: 0.3s !important;
+  /*-webkit-transition: all 0.3s;*/
+}
+
+.push-button:hover {
+  background-color: #DF6553 !important;
+  -webkit-box-shadow: 0px 9px 0px #8E2B1C !important;
+}
+
+.push-button:active {
+  -webkit-box-shadow: 0px 2px 0px #84261a !important;
+  top: 7px !important;
+}
+
+
+/* transition delay demo --------------------------------------------------------------------------- */
+
+#delay_demo {
+  position:relative;
+  width:500px;
+  height:400px;
+  margin:0 auto 10px;
+  border:1px #aaa solid;
+  padding:10px;
+}
+#dd_main {
+  width:100px;
+  height:100px;
+  position:absolute;
+  top:160px;
+  left:210px;
+  background-color:red;
+  border-radius:50px;
+  transition: all 2s ease-in-out;}
+#delay_demo .center {
+  width:500px;
+  position:absolute;
+  bottom:20px;
+}
+#dd1, #dd2, #dd3, #dd4, #dd5, #dd6, #dd7, #dd8 {
+  width:20px;
+  height:20px;
+  border-radius:10px;
+  position:absolute;
+  top:200px;
+  left:250px;
+  background-color:blue;
+transition: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+transform: translate3d(0,0,0);}
+  #dd1 {
+transition-delay: 0.1s;  }
+  #dd2 {
+transition-delay: 0.2s;  }
+  #dd3 {
+transition-delay: 0.3s;  }
+  #dd4 {
+transition-delay: 0.4s;  }
+  #dd5 {
+transition-delay: 0.5s;  }
+  #dd6 {
+transition-delay: 0.6s;  }
+  #dd7 {
+transition-delay: 0.7s;  }
+  #dd8 {
+transition-delay: 0.8s;  }
+#delay_demo:hover #dd_main {
+  opacity:0;
+}
+#delay_demo:hover #dd1, #delay_demo.hover_effect #dd1 {
+transform: translate(-250px,-200px);}
+#delay_demo:hover #dd2, #delay_demo.hover_effect #dd2 {
+transform: translate(0,-200px);}
+#delay_demo:hover #dd3, #delay_demo.hover_effect #dd3 {
+transform: translate(250px,-200px);}
+#delay_demo:hover #dd4, #delay_demo.hover_effect #dd4 {
+transform: translate(250px, 0);}
+#delay_demo:hover #dd5, #delay_demo.hover_effect #dd5 {
+transform: translate(250px,200px);}
+#delay_demo:hover #dd6, #delay_demo.hover_effect #dd6 {
+transform: translate(0,200px);}
+#delay_demo:hover #dd7, #delay_demo.hover_effect #dd7 {
+transform: translate(-250px,200px);}
+#delay_demo:hover #dd8, #delay_demo.hover_effect #dd8 {
+transform: translate(-250px,0);}
+
+
+/* timing functions demo */
+#timings_demo {
+  position:relative;
+  width:530px;
+  height:530px;
+  margin:0 auto 10px;
+  border:1px #aaa solid;
+  padding:10px;
+}
+#timings_demo.linear-demo {
+	overflow: hidden;
+}
+#timings_demo.linear-demo .test_box:first-child {
+	transition: all 4s linear;
+	margin-left:-100px;
+}
+#timings_demo.linear-demo .test_box:nth-child(2) {
+  transition: all 4s ease;
+  margin-left:-100px;
+}
+#timings_demo .test_box {
+  font-size:18px;
+  position:relative;
+  width:80px;
+  height:75px;
+  margin-bottom:10px;
+  background-color:#eee;
+  color: #222;
+}
+#timings_demo .test_box p {
+  text-align:center;
+  padding-top:-10px;
+}
+#ease.test_box {
+	transition: all 3s ease;
+	border:1px #f00 solid;
+}
+#ease-in.test_box {
+	transition: all 3s ease-in;
+	border:1px #0f0 solid;
+}
+#ease-out.test_box {
+	transition: all 3s ease-out;
+	border:1px #00f solid;
+}
+#ease-in-out.test_box {
+	transition: all 3s ease-in-out;
+	border:1px #ff0 solid;
+}
+#linear.test_box {
+	transition: all 3s linear;
+	border:1px #f0f solid;
+}
+#custom.test_box {
+	transition: all 3s cubic-bezier(1.000, 0.835, 0.000, 0.945);
+	border:1px #0ff solid;
+}
+#negative.test_box {
+	transition: all 3s cubic-bezier(1.000, -0.530, 0.405, 1.425);
+	border:1px #000 dotted;
+}
+#timings_demo:hover .test_box {
+	margin-left:420px;
+  background-color:#fff;
+}
+
+#timings_demo.linear-demo:hover .test_box {
+	margin-left:590px;
+  background-color:#fff;
+}
+
+
+/* css transforms demo --------------------------------------------------------------------------- */
+.clear {
+  clear: both;
+}
+#transDemo1 {
+  margin-bottom:20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+}
+#transDemo1 div:not(.clear) {
+  width:70px;
+  height:180px;
+  margin:10px 50px;
+  padding:10px;
+  border:5px #e74c3c solid;
+  border-radius: 5px;
+  float:left;
+  font-size: 20px;
+  color: #ecf0f1;
+  transition: transform 0.5s;
+}
+#transDemo1 #skew {
+  transform:skew(35deg);
+}
+
+#transDemo1 #scale {
+  transform:scale(1,0.5);
+}
+
+#transDemo1 #rotate {
+  transform:rotate(45deg);
+}
+
+#transDemo1 #translate {
+  transform:translate(20px, 30px);
+}
+#transDemo1 #matrix-transform {
+  transform:matrix(0.866,0.5,-0.5,0.866,0,0);;
+}
+
+#transDemo1 #skew:hover {transform:skew(0);}
+#transDemo1 #scale:hover {transform:scale(1,1);}
+#transDemo1 #rotate:hover {transform:rotate(0);}
+#transDemo1 #translate:hover {transform:translate(0, 0);}
+
+
+
+#transDemo4 {
+  width:420px;
+  height:190px;
+  margin:0 auto 10px;
+  border:1px #aaa solid;
+  padding:10px;
+  font-size: 30px;
+}
+
+
+#transDemo4 div:not(.clear) {
+  -webkit-transition:all 2s ease-in-out;
+  -moz-transition:all 2s ease-in-out;
+  -ms-transition:all 2s ease-in-out;
+  transition:all 2s ease-in-out;
+
+  -webkit-perspective: 800px;
+  -webkit-perspective-origin: 50% 100px;
+
+  -moz-perspective: 800px;
+  -moz-perspective-origin: 50% 100px;
+
+  -ms-perspective: 800px;
+  -ms-perspective-origin: 50% 100px;
+
+
+  perspective: 800px;
+  perspective-origin: 50% 100px;
+
+  width:70px;
+  height:130px;
+  margin:10px 20px;
+  padding:10px;
+  border: 4px #2980b9 solid;
+  float:left;
+}
+
+#transDemo4:hover #rotateX, #transDemo4.hover_effect #rotateX {
+  transform:rotateX(180deg);
+}
+#transDemo4:hover #rotateY, #transDemo4.hover_effect #rotateY {
+  transform:rotateY(180deg);
+}
+#transDemo4:hover #rotateZ, #transDemo4.hover_effect #rotateZ {
+  transform:rotateZ(180deg);
+}
+
+
+
+/* css3 animation demo --------------------------------------------------------------------------- */
+.css3-demo {
+  width: 40px;
+  height: 40px;
+  background: red;
+  position: relative;
+  -webkit-animation-name: myFirstAnimation;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+  /*-webkit-animation-delay: 2s;*/
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate-reverse;
+  -webkit-animation-play-state: running;
+}
+
+@-webkit-keyframes myFirstAnimation {
+  0%   {background:red; left:0px; top:0px;}
+  25%  {background:yellow; left:200px; top:0px;}
+  50%  {background:blue; left:200px; top:-90px;}
+  75%  {background:green; left:300px; top:-90px;}
+  100% {background:red; left:300px; top:0px;}
+}
+
+.cloud-container {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 40% !important;
+  overflow: hidden;
+}
+.cloud {
+  width: 100px;
+  height: 60px;
+  display: block;
+  margin-bottom: 50px !important;
+  background: none !important;
+  border: none !important;
+  -webkit-animation-name: cloudsPassingBy;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+  -webkit-animation-fill-mode: backwards;
+}
+.cloud:first-child {
+  -webkit-animation-direction: alternate;
+  -webkit-animation-delay: 2s;
+}
+.cloud:nth-child(2) {
+  -webkit-animation-direction: alternate-reverse;
+}
+
+@-webkit-keyframes cloudsPassingBy {
+  from {
+    margin-left: -150px;
+  }
+  to {
+    margin-left: 450px;
+  }
+}
+
+/* perspective demo --------------------------------------------------------------------------- */
+.portfolio {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.portfolio-item {
+  width: 300px;
+  height: 400px;
+  float: left;
+  margin-top: 60px;
+  position: relative;
+  -webkit-perspective: 1000px;
+}
+
+.portfolio-bg {
+  -webkit-transform: rotateY(30deg);
+  -webkit-transition: -webkit-transform 0.5s ease;
+}
+
+.portfolio-item:hover .portfolio-bg {
+  -webkit-transform: rotateY(0deg);
+}
+
+.portfolio-item:hover .portfolio-description {
+  -webkit-transform: rotateY(0deg) translateZ(0px);
+  transform: rotateY(360deg);
+}
+
+.portfolio-description {
+  background-color: #f0ede7;
+  color: #8b7d5e;
+  font-size: 25px !important;
+  width: 190px;
+  padding: 20px !important;
+  position: absolute;
+  top: 200px;
+  left: 35px;
+  box-shadow: 0px 0px 10px #000;
+  -webkit-transform: rotateY(30deg) translateZ(60px);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+}
+
+
+/* keyframes demo --------------------------------------------------------------------------- */
+
+.basketball {
+  width: 120px;
+  height: 120px;
+  border: none !important;
+  background: none !important;
+}
+
+.pulse {
+  -webkit-animation-name: pulse;  
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+      -webkit-transform: scale(0.95);
+      opacity: 0.7;       
+  }
+  50% {
+      -webkit-transform: scale(1);
+      opacity: 1; 
+  }   
+  100% {
+      -webkit-transform: scale(0.95);
+      opacity: 0.7;   
+  }           
+}
+
+
+/* sprites demo ------------------------------------------------------------------------------------*/
+
+.ken {
+  height: 110px;
+  width: 70px;
+  margin: 0 auto !important;
+  background-image: url("img/ken-shoryuken.png");
+  -webkit-transform: scale(1.5, 1.5);
+  -webkit-animation: shoryuken steps(15, end) normal 2.5s infinite;
+}
+
+@-webkit-keyframes shoryuken {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -1054px 0;
+  }
+}
+
+
+.typing-animation { 
+  position: relative;
+  float: left;
+  font-size: 100%;
+  font-family: Consolas, monospace !important;
+  outline: none;
+}
+
+.typing-animation span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  background: #222;
+  border-left: .1em solid #222;
+  box-sizing: border-box; 
+  -webkit-animation: typing 8s steps(24, end), blink-caret 1s step-end infinite;
+}
+
+@-webkit-keyframes typing {
+  from { width: 100% }
+  to { width:0 }
+}
+
+@-webkit-keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #fff }
+}
