@@ -1,6 +1,6 @@
 # Demystifying CSS3 Animations
 
-This is a presentation made on <a target='_blank' href='http://CorkDev.io'>CorkDev.io</a> (<a target='_blank' href='http://www.meetup.com/corkdev-io/events/220966368/'>Meetup</a>) about CSS3 Animations.
+This is a presentation I made on <a target='_blank' href='http://CorkDev.io'>CorkDev.io</a> (<a target='_blank' href='http://www.meetup.com/corkdev-io/events/220966368/'>Meetup</a>) about CSS3 Animations.
 
 There are two ways to run it:
 
